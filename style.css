@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 320px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  padding-top: 1px;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  margin: 25px auto 0px auto;
+  width: 280px;
+  border-radius: 12px;
+  background: hsl(178, 100%, 50%);
+}
+
+.image img {
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.view {
+  position: absolute;
+  opacity: 0;
+  max-width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image:hover .view {
+  opacity: 1;
+}
+
+.image:hover img {
+  opacity: 0.5;
+}
+
+.title {
+  color: white;
+  margin: 20px 0px 0px 25px;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.description {
+  font-size: 15px;
+  width: 80%;
+  margin: 16px 0px 0px 25px;
+  line-height: 1.7;
+  color: hsl(215, 51%, 70%);
+}
+
+.eth-container {
+  display: flex;
+  color: hsl(178, 100%, 50%);
+  font-family: inherit;
+}
+
+.eth {
+  display: flex;
+  margin: 16px 0px 0px 25px;
+  font-size: 14px;
+}
+
+.eth i {
+  margin-top: 2px;
+}
+.eth p {
+  margin-left: 8px;
+}
+
+.time {
+  display: flex;
+  margin: 16px 25px 0px auto;
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+.time i {
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.border {
+  border-bottom: 1px solid hsl(215, 51%, 70%);
+  width: 85%;
+  margin: 15px auto 0 auto;
+}
+
+.portrait {
+  display: flex;
+  margin: 20px 0px 0px 25px;
+}
+
+.portrait p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 15px;
+}
+
+.portrait a {
+  text-decoration: none;
+  color: white;
+}
+
+.portrait img {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
